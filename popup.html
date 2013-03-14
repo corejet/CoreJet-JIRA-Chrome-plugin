@@ -73,17 +73,16 @@ ul.tabs li {
         function(request, sender, sendResponse) {
             
             var javaCode = 
-                "import org.corejet.annotations.Scenario;\n" + 
-                "import org.corejet.annotations.Story;\n" + 
+                "import org.corejet.JiraStoryRepository;\n" +
                 "import org.corejet.annotations.Given;\n" +
-                "import org.corejet.annotations.When;\n" + 
-                "import org.corejet.annotations.Then;\n" + 
-                "import org.corejet.annotations.NotImplementedYet;\n" + 
-                "import org.corejet.annotations.StorySource;\n" + 
-                "import org.corejet.testrunner.CoreJetTestRunner;\n" + 
-                "import org.junit.runner.RunWith;\n" +
-                "import org.corejet.testrunner.CoreJetTestRunner;\n" +
+                "import org.corejet.annotations.NotImplementedYet;\n" +
+                "import org.corejet.annotations.Scenario;\n" +
+                "import org.corejet.annotations.Story;\n" +
                 "import org.corejet.annotations.StorySource;\n" +
+                "import org.corejet.annotations.Then;\n" +
+                "import org.corejet.annotations.When;\n" +
+                "import org.corejet.testrunner.CoreJetTestRunner;\n" +
+                "import org.junit.runner.RunWith;\n" +
                 "\n" +
                 "@RunWith(CoreJetTestRunner.class)\n" +
                 '@Story(id="' + request.key + '", title="' + request.title + '")\n' +
