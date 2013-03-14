@@ -1,5 +1,5 @@
 var key = $("#key-val").text();
-var title = $("#issue_header_summary a").text();
+var title = $($("#summary-val")[0] || $("#issue_header_summary a")[0]).text();
 var criteria = "";
 
 $("li.item .value.type-textarea .flooded").each(function() {
